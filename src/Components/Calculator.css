@@ -1,0 +1,117 @@
+.calculator{
+margin-top: 1.5rem;
+padding: 5px;
+border-radius: 10px;
+   background-color: #2d3436;
+   color: #fff;
+    display: grid;
+    grid-template-columns: repeat(4,4rem);
+    grid-template-rows: minmax(7rem,auto) repeat(5,4rem);
+    transition: all 0.3s ease-in 0s;
+}
+
+
+
+.output,.default .output{
+    grid-column: 1/-1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-around;
+    padding: 10px;
+    /* border: 1px solid #fff; */
+    height: 92px;
+    margin: 5px;
+    border-radius: 4px;
+    position: relative;
+}
+
+.previous-output{
+    color: rgba(255,255,255,.75);
+    font-size: 1.5rem;
+}
+
+.current-output{
+    color: white;
+    font-size: 2.5rem;
+   
+}
+
+.default .previous-output{
+    color: rgba(141, 138, 138, 0.75)
+}
+
+.default .current-output{
+    color: #2d3436;
+}
+
+.toggle-mode{
+    position: absolute;
+    left: 4px;
+    bottom: 2px;
+}
+
+.toggle-mode .fa-solid{
+    font-size: 18px;
+    cursor: pointer;
+    
+}
+
+.default .toggle-mode .fa-solid{
+    color: #2d3436;
+}
+
+.span-two{
+    grid-column: span 2;
+}
+
+.calculator > button{
+    outline: none;
+    border: 1px solid #fff;
+    background-color: transparent;
+    color: #ccc;
+    margin: 3px 5px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.5rem;
+    transition: all 0.2s ease-out 0s;
+}
+.calculator-default>button {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.calculator>button:hover,.calculator>button:hover{
+    background-color: #ff9f1a;
+    color: #fff;
+}
+
+.orange-text,.btn2{
+    color: orangered;
+}
+
+#orange-background{
+    background-color: #ff9f1a;
+    color: #fff;
+}
+
+#btn1,#btn2{
+    color: #ff9f1a;
+}
+
+#btn1:hover,#btn2:hover {
+    background-color: #ff9f1a;
+    color: #fff;
+}
+
+.default{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: #fff;
+}
+
+.default > button{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border: none;
+}
+
+.default > .output{
+    color: #2d3436;
+}
